@@ -2,22 +2,21 @@
 
 ## Project Overview
 
-Statistical analysis of Hammett substituent constants (σ) using R, demonstrating R programming skills and basic statistical tests in the context of physical organic chemistry.
-
-## Organic Chemistry Background
-
-Hammett constants quantify the electronic effects of substituents on aromatic rings. They're derived from pKa measurements of substituted benzoic acids:
+Hammett substituent constant statistical analysis of the para and meta positions for common EWG and EDGs in aromatic acids.
 
 ```
 σ = log(K_X / K_H)
 ```
 
-__Key Concepts:__
+
+
+## Where Is the Conjugate Base?
+
+A Hammett constant (σ) quantifies how much an aromatic substituent affects electron density, measuring its ability to donate or withdraw electrons (Evans, 2021).
+
 - __σ > 0__: Electron-withdrawing group (EWG) - stabilizes negative charge
 - __σ < 0__: Electron-donating group (EDG) - destabilizes negative charge
 - __σ_meta vs σ_para__: Differences reveal resonance vs inductive effects
-
-## Where Is the Conjugate Base?
 
 What happens when benzoic acid loses a proton?
 
@@ -168,7 +167,7 @@ Primary data compiled from:
 | effect_type | EDG, EWG, neutral, weak_EDG, weak_EWG |
 | functional_class | Chemical class (alkyl, halogen, amino, etc.) |
 
-## Statistical Methods (Days 2-5)
+## Statistical Methods (Day 1-5)
 
 1. __Exploratory Analysis__: Distributions, correlations, outlier detection
 2. __Paired t-test__: Compare σ_meta vs σ_para
@@ -194,12 +193,6 @@ setwd("path/to/hammett-analysis")
 # Run Day 1 script
 source("scripts/01_day1_setup.R")
 ```
-
-## Author
-
-Qinkai Li  
-University of Waterloo  
-January 2026
 
 ## References
 
