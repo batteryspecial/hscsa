@@ -1,0 +1,35 @@
+============================================================
+HAMMETT CONSTANT ANALYSIS - DAY 1 SUMMARY
+============================================================
+
+DATASET INFO:
+  Total substituents: 32
+  Variables: 13
+
+EFFECT TYPE DISTRIBUTION:
+
+     EDG      EWG  neutral weak_EDG weak_EWG 
+      11       12        3        4        2 
+
+HETEROATOM DISTRIBUTION:
+
+Br  C Cl  F  I  N  O  S Si 
+ 1  9  2  2  1  8  6  2  1 
+
+SIGMA STATISTICS:
+   sigma_meta        sigma_para      
+ Min.   :-0.1600   Min.   :-0.83000  
+ 1st Qu.:-0.0475   1st Qu.:-0.15250  
+ Median : 0.1200   Median : 0.00000  
+ Mean   : 0.1925   Mean   : 0.07719  
+ 3rd Qu.: 0.3700   3rd Qu.: 0.27750  
+ Max.   : 0.8800   Max.   : 0.91000  
+
+CORRELATION:
+r(sigma_meta, sigma_para) = 0.8989
+
+KEY FINDINGS:
+- Strongest EWG: NO (σ_para = 0.91)
+- Strongest EDG: N(CH3)2 (σ_para = -0.83)
+- Large meta-para differences indicate resonance effects
+- N(CH3)2 shows largest resonance donation (σ_diff = 0.68)
