@@ -1,0 +1,59 @@
+============================================================
+HAMMETT CONSTANT ANALYSIS - DAY 2 SUMMARY
+============================================================
+
+KEY CORRELATIONS:
+  σ_meta vs σ_para: r = 0.899
+  σ_meta vs σ_I:    r = 0.921
+  σ_para vs σ_I:    r = 0.681
+
+RESONANCE CONTRIBUTION (σ_para - σ_meta):
+  Mean: -0.115
+  Range: [-0.680, 0.290]
+
+RESONANCE CLASSIFICATION:
+
+Strong -R (acceptor)    Strong +R (donor)    Weak/No resonance 
+                   1                   10                   21 
+
+TOP RESONANCE DONORS:
+ substituent sigma_meta sigma_para sigma_resonance
+     N(CH3)2      -0.15      -0.83           -0.68
+         NH2      -0.16      -0.66           -0.50
+          OH       0.12      -0.37           -0.49
+        OCH3       0.12      -0.27           -0.39
+       OC2H5       0.10      -0.24           -0.34
+
+TOP RESONANCE ACCEPTORS:
+ substituent sigma_meta sigma_para sigma_resonance
+          NO       0.62       0.91            0.29
+       COCH3       0.38       0.50            0.12
+         CF3       0.43       0.54            0.11
+          CN       0.56       0.66            0.10
+        CO2H       0.37       0.45            0.08
+
+FUNCTIONAL CLASS SUMMARY:
+ functional_class n mean_sigma_m mean_sigma_p mean_resonance
+            amino 2       -0.155       -0.745         -0.590
+         hydroxyl 1        0.120       -0.370         -0.490
+           alkoxy 2        0.110       -0.255         -0.365
+            alkyl 6       -0.077       -0.160         -0.083
+            amide 2        0.130       -0.075         -0.205
+            silyl 1       -0.040       -0.070         -0.030
+      unsaturated 1        0.050       -0.020         -0.070
+             aryl 1        0.060       -0.010         -0.070
+        reference 1        0.000        0.000          0.000
+        thioether 1        0.150        0.000         -0.150
+            thiol 1        0.250        0.150         -0.100
+          halogen 4        0.362        0.175         -0.188
+        haloalkyl 2        0.270        0.330          0.060
+         carbonyl 3        0.367        0.457          0.090
+            cyano 1        0.560        0.660          0.100
+            nitro 1        0.710        0.780          0.070
+         ammonium 1        0.880        0.820         -0.060
+          nitroso 1        0.620        0.910          0.290
+
+OUTLIERS DETECTED:
+  In σ_meta: 0
+  In σ_para: 1
+  In resonance: 4
