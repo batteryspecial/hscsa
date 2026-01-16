@@ -1,4 +1,5 @@
-# Hammett Substituent Constant Statistical Analysis
+# Statistical Modeling of Electronic Substituent Effects Using Hammett Constants
+Abbreviated HSCSA.
 
 ## Project Overview
 
@@ -126,19 +127,20 @@ Resonance puts negative charge on 2,4,6, and cannot place charge at the meta car
 ```
 hammett-analysis/
 ├── data/
+│   ├── hammett_day2.csv  
 │   ├── hammett_constants.csv     # Primary dataset (32 substituents)
 │   ├── hammett_extended.csv      # Extended dataset with σ+ and σ-
 │   └── hammett_clean.csv         # Processed dataset
 ├── scripts/
-│   ├── 01_day1_setup.R           # Data loading and exploration
-│   ├── 02_day2_eda.R             # Exploratory data analysis
-│   ├── 03_day3_statistics.R      # Statistical tests
-│   ├── 04_day4_modeling.R        # Predictive modeling
-│   └── 05_day5_report.Rmd        # Final R Markdown report
+│   ├── 01-day1-setup.R           # Data loading and exploration
+│   ├── 02-day2-eda.R             # Exploratory data analysis
+│   ├── 03-day3-statistics.R      # Statistical tests
+│   ├── 04-day4-modeling.R        # Predictive modeling
+│   └── 05-day5-report.Rmd        # Final R Markdown report
 ├── output/
 │   └── [generated plots and results]
 ├── docs/
-│   └── [documentation]
+│   └── [summary and notes]
 └── README.md
 ```
 
