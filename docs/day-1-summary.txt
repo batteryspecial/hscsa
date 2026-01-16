@@ -8,13 +8,13 @@ DATASET INFO:
 
 EFFECT TYPE DISTRIBUTION:
 
-     EDG      EWG  neutral weak_EDG weak_EWG 
-      11       12        3        4        2 
+EDG    EWG    neutral    weak_EDG    weak_EWG 
+11     12     3          4           2 
 
 HETEROATOM DISTRIBUTION:
 
-Br  C Cl  F  I  N  O  S Si 
- 1  9  2  2  1  8  6  2  1 
+Br C Cl  F  I  N  O  S Si 
+1  9 2   2  1  8  6  2 1 
 
 SIGMA STATISTICS:
    sigma_meta        sigma_para      

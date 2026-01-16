@@ -8,8 +8,6 @@ Hammett substituent constant statistical analysis of the para and meta positions
 σ = log(K_X / K_H)
 ```
 
-
-
 ## Where Is the Conjugate Base?
 
 A Hammett constant (σ) quantifies how much an aromatic substituent affects electron density, measuring its ability to donate or withdraw electrons (Evans, 2021).
@@ -161,7 +159,7 @@ Primary data compiled from:
 | sigma_I | Inductive sigma constant |
 | sigma_v | Charton's v (steric size) |
 | pi | Hansch hydrophobicity parameter |
-| Es | Taft steric parameter |
+| ES | Taft steric parameter |
 | MR | Molar refractivity |
 | heteroatom | Key heteroatom (C, N, O, S, F, Cl, Br, I) |
 | effect_type | EDG, EWG, neutral, weak_EDG, weak_EWG |

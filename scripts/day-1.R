@@ -1,9 +1,8 @@
+# nolint file: line_length_linter
+
 # =============================================================================
 # Hammett Substituent Constant Analysis
 # Day 1: Setup, Data Loading, and Initial Exploration
-# Author: Qinkai Li
-# Date: January 2026
-# NOTE: Uses only base R - no external packages required
 # =============================================================================
 
 # -----------------------------------------------------------------------------
@@ -158,7 +157,7 @@ effect_colors <- c(
 )
 
 # Plot 1: Sigma meta vs Sigma para
-png("output/01_sigma_meta_vs_para.png", width = 800, height = 700)
+png("output/day-1/01_sigma_meta_vs_para.png", width = 800, height = 700)
 par(mar = c(5, 5, 4, 2))
 
 plot(hammett_clean$sigma_meta, hammett_clean$sigma_para,
@@ -187,10 +186,10 @@ mtext("Dashed line: σ_meta = σ_para (no resonance effect)",
       side = 3, line = 0.3, cex = 0.9)
 
 dev.off()
-cat("Saved: output/01_sigma_meta_vs_para.png\n")
+cat("Saved: output/day-1/01_sigma_meta_vs_para.png\n")
 
 # Plot 2: Distribution histograms
-png("output/02_sigma_distributions.png", width = 1000, height = 500)
+png("output/day-1/02_sigma_distributions.png", width = 1000, height = 500)
 par(mfrow = c(1, 2), mar = c(5, 5, 4, 2))
 
 # Sigma meta histogram
@@ -212,10 +211,10 @@ legend("topright", legend = c("Zero", "Mean"), col = c("red", "blue"),
        lty = c(2, 1), lwd = 2, bty = "n")
 
 dev.off()
-cat("Saved: output/02_sigma_distributions.png\n")
+cat("Saved: output/day-1/02_sigma_distributions.png\n")
 
 # Plot 3: Boxplot by effect type
-png("output/03_boxplot_by_effect.png", width = 900, height = 600)
+png("output/day-1/03_boxplot_by_effect.png", width = 900, height = 600)
 par(mar = c(5, 8, 4, 2))
 
 # Prepare data for boxplot
@@ -258,10 +257,10 @@ mtext("EDG = Electron Donating, EWG = Electron Withdrawing",
       side = 3, line = 0.3, cex = 0.9)
 
 dev.off()
-cat("Saved: output/03_boxplot_by_effect.png\n")
+cat("Saved: output/day-1/03_boxplot_by_effect.png\n")
 
 # Plot 4: Bar chart of mean sigma by heteroatom
-png("output/04_heteroatom_means.png", width = 800, height = 600)
+png("output/day-1/04_heteroatom_means.png", width = 800, height = 600)
 par(mar = c(5, 5, 4, 2))
 
 # Filter out carbon (reference)
@@ -281,10 +280,10 @@ text(seq_len(nrow(hetero_subset)) * 1.2 - 0.5,
      labels = paste0("n=", hetero_subset$n), cex = 0.8)
 
 dev.off()
-cat("Saved: output/04_heteroatom_means.png\n")
+cat("Saved: output/day-1/04_heteroatom_means.png\n")
 
 # Plot 5: Correlation between sigma_meta and sigma_para
-png("output/05_correlation.png", width = 700, height = 600)
+png("output/day-1/05_correlation.png", width = 700, height = 600)
 par(mar = c(5, 5, 4, 2))
 
 # Calculate correlation
@@ -307,7 +306,7 @@ legend("topleft",
        bty = "n", cex = 1.2)
 
 dev.off()
-cat("Saved: output/05_correlation.png\n")
+cat("Saved: output/day-1/05_correlation.png\n")
 
 # -----------------------------------------------------------------------------
 # 6. KEY OBSERVATIONS (Organic Chemistry Context)
@@ -355,14 +354,14 @@ write.csv(hammett_clean, "data/hammett_clean.csv", row.names = FALSE)
 cat("Saved: data/hammett_clean.csv\n")
 
 # Save summary to text file
-sink("output/day1_summary.txt")
+sink("output/day-1/day1_summary.txt")
 cat("============================================================\n")
 cat("HAMMETT CONSTANT ANALYSIS - DAY 1 SUMMARY\n")
 cat("============================================================\n\n")
 
 cat("DATASET INFO:\n")
-cat(sprintf("  Total substituents: %d\n", nrow(hammett_clean)))
-cat(sprintf("  Variables: %d\n\n", ncol(hammett_clean)))
+cat(sprintf("Total substituents: %d\n", nrow(hammett_clean)))
+cat(sprintf("Variables: %d\n\n", ncol(hammett_clean)))
 
 cat("EFFECT TYPE DISTRIBUTION:\n")
 print(table(hammett_clean$effect_type))
@@ -385,7 +384,7 @@ cat(sprintf("- Strongest EDG: %s (σ_para = %.2f)\n",
 cat("- Large meta-para differences indicate resonance effects\n")
 cat("- N(CH3)2 shows largest resonance donation (σ_diff = 0.68)\n")
 sink()
-cat("Saved: output/day1_summary.txt\n")
+cat("Saved: docs/day-1-summary.txt\n")
 
 # -----------------------------------------------------------------------------
 # 8. COMPLETION MESSAGE
@@ -393,20 +392,4 @@ cat("Saved: output/day1_summary.txt\n")
 
 cat("\n============================================================\n")
 cat("                  DAY 1 COMPLETE!\n")
-cat("============================================================\n")
-cat("\nGenerated Files:\n")
-cat("  DATA:\n")
-cat("    - data/hammett_clean.csv (processed dataset)\n")
-cat("  PLOTS:\n")
-cat("    - output/01_sigma_meta_vs_para.png\n")
-cat("    - output/02_sigma_distributions.png\n")
-cat("    - output/03_boxplot_by_effect.png\n")
-cat("    - output/04_heteroatom_means.png\n")
-cat("    - output/05_correlation.png\n")
-cat("  SUMMARY:\n")
-cat("    - output/day1_summary.txt\n")
-cat("\nNEXT STEPS (Day 2):\n")
-cat("  - Deep exploratory data analysis\n")
-cat("  - Correlation matrices\n")
-cat("  - Outlier detection\n")
 cat("============================================================\n")
