@@ -1,5 +1,5 @@
 # Statistical Modeling of Electronic Substituent Effects Using Hammett Constants
-Abbreviated HSCSA. Take a look at README for the simplified theory, and take a look at my notes where I discuss each of the plots in detail.
+Abbreviated HSCSA. Take a look at README for the simplified theory, and take a look at my notes where I discuss each of the plots in detail. The initial dataset .csv files were compiled using Anthropic's Opus 4.5.
 
 ## Project Overview
 

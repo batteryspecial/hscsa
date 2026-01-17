@@ -1,0 +1,31 @@
+============================================================
+HAMMETT CONSTANT ANALYSIS - DAY 3 SUMMARY
+Statistical Hypothesis Testing
+============================================================
+
+1. NORMALITY TESTS (Shapiro-Wilk)
+   σ_meta:      p = 0.0415 (not normal)
+   σ_para:      p = 0.3069 (normal)
+
+2. PAIRED T-TEST: σ_meta vs σ_para
+   t = 3.2379, df = 31, p = 0.002868
+   Mean difference: 0.1153
+   Cohen's d: 0.572
+   Conclusion: Significantly different
+
+3. ANOVA: σ_para by Heteroatom
+   F = 0.6717, p = 0.648498
+   Conclusion: No significant difference
+
+4. ANOVA: σ_para by Effect Type
+   F = 17.9263, p = 2.71e-07
+   η² = 0.726 (72.6% variance explained)
+
+5. LINEAR REGRESSION: σ_para ~ σ_meta
+   R² = 0.8080
+   Equation: σ_para = -0.186 + 1.367 × σ_meta
+   Residual SE: 0.1794
+
+6. KEY RESIDUALS (Resonance-dominated substituents)
+   Positive (resonance acceptors): NO, COCH3, CF3
+   Negative (resonance donors): N(CH3)2, NH2, OH
