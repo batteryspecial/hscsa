@@ -1,6 +1,6 @@
 # Briefing
 
-> In day 3, we are performing more extensive experimental testing like ANOVA, linear regression, and more correlation tests between the Hammett constant and additional molecular properties. We are shifting from data analysis to extensions from the patterns we have observed in day 1 and 2.
+> In day 3, we are performing more extensive experimental testing like ANOVA, linear regression, and more correlation tests between the Hammett constant and additional molecular properties. We are shifting from data analysis to a deeper dive into the patterns we have observed on previous days, and perhaps quantifying them through statistical methods.
 
 ## Image 11, Shapiro-Wilk Normality
 

@@ -306,7 +306,7 @@ cat("\n--- Tukey HSD Post-hoc Test ---\n")
 tukey_effect <- TukeyHSD(anova_effect)
 print(tukey_effect)
 
-png("output/day-3/14_anova_effect_type.png", width = 1000, height = 600)
+png("output/day-3/13_anova_effect_type.png", width = 1000, height = 600)
 
 par(mar = c(7, 5, 4, 2))
 effect_order <- aggregate(sigma_para ~ effect_type, data = hammett, FUN = mean)
@@ -356,7 +356,7 @@ legend("topleft", legend = c("EDG (electron-donating)", "Weak EDG",
        bty = "n", cex = 0.85)
 
 dev.off()
-cat("Saved: output/day-3/14_anova_effect_type.png\n")
+cat("Saved: output/day-3/13_anova_effect_type.png\n")
 
 # -----------------------------------------------------------------------------
 # 6. LINEAR REGRESSION: Predicting σ_para from σ_meta
@@ -409,7 +409,7 @@ neg_resid <- hammett[order(hammett$residuals), c("substituent", "sigma_meta", "s
 print(head(neg_resid, 5), row.names = FALSE)
 
 # Visualization
-png("output/day-3/15_regression_analysis.png", width = 1000, height = 500)
+png("output/day-3/14_regression_analysis.png", width = 1000, height = 500)
 par(mfrow = c(1, 2), mar = c(5, 5, 4, 2))
 
 # Panel 1: Regression plot
@@ -455,7 +455,7 @@ if (nrow(hammett) > 10) {
 }
 
 dev.off()
-cat("\nSaved: output/day-3/15_regression_analysis.png\n")
+cat("\nSaved: output/day-3/14_regression_analysis.png\n")
 
 # Normality of residuals
 shapiro_resid <- shapiro.test(hammett$residuals)
