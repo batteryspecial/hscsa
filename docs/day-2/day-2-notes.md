@@ -1,6 +1,6 @@
 # Briefing
 
-> Remember in Day 2, we are performing correlation comparisons, visualizing meta vs para, identifying outliers, and revisualizing in terms of functional group. Starting now, I will not be saying "inductive hammett constant" but rather sigma_I.
+> Remember in Day 2, we are performing correlation comparisons, visualizing meta vs para, identifying outliers, and revisualizing in terms of substituent group. Starting now, I will not be saying "inductive hammett constant" but rather sigma_I.
 
 ## Image 6, Correlation Heatmap
 
